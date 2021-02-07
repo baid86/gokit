@@ -2,7 +2,7 @@
 // there are minor changes but for most of the code and design remains the same.
 // Original License terms https://git.sr.ht/~ewintr/go-kit/tree/master/item/LICENSE
 
-package test
+package httptest
 
 import (
 	"io/ioutil"
