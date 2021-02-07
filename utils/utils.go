@@ -1,11 +1,3 @@
-/*
- <copyright file="utils.go">
-		Copyright (C) 2020 Cambium Networks, LTD. All rights reserved.
- </copyright>
- <summary>
-		 Implements common utils
- </summary>
-*/
 package utils
 
 import "strings"
