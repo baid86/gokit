@@ -153,5 +153,5 @@ func Example_FilterJSON_7() {
 	raw, _ := json.Marshal(&out)
 	fmt.Println(string(raw))
 	//output:
-	// {"a":[{"b":5,"c":5},{"c":5}]}
+	// null
 }

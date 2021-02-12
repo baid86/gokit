@@ -136,7 +136,6 @@ func FilterJSON(template interface{}, data interface{}, deepParse bool) (result 
 						}
 					}
 				}
-				return result
 
 			}
 			val, ok := mapData[tk]
