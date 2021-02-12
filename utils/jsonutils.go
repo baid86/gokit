@@ -136,18 +136,21 @@ func FilterJSON(template interface{}, data interface{}, deepParse bool) (result 
 						}
 					}
 				}
-
 			}
 			val, ok := mapData[tk]
 			if !ok {
-				return
+				continue
 			}
 			// Check if its a leaf node
 			if _, ok := tv.(float64); ok {
 				if ok {
-					return map[string]interface{}{tk: val}
+					if result == nil {
+						result = map[string]interface{}{tk: val}
+					} else {
+						result.(map[string]interface{})[tk] = val
+					}
 				}
-				return nil
+				continue
 			}
 
 			res := FilterJSON(tv, val, deepParse)
